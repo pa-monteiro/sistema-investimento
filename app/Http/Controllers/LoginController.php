@@ -13,7 +13,7 @@ class LoginController extends Controller
      */
     public function homepage()
     {
-       return view('welcome');
+       return view('user.login');
     }
 
     /**

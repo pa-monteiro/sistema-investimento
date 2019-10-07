@@ -5,4 +5,5 @@ Route::get('/', function () {
 });
 
 //Routes to user auth
-Route::get('login', 'LoginController@create');
+Route::get('login', 'LoginController@homepage');
+Route::post('login', ['as' => 'user.login', 'LoginController@store']);
